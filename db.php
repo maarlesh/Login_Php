@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$username = "root";   //username of the xampp
+$username = "root";   //usernames of the xampp
 $password = "root";   
 $dbname = "login_system";   //db name created in sql
 
