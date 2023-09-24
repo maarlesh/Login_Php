@@ -11,9 +11,14 @@
         top : 50%;
         left : 50%;
         transform: translate(-50%, -50%);
+        height : 700px;
+        width : 1200px; 
     }
     .flex-container {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 650px;
     }
     .flex-container > div{
         background-color: white;
@@ -22,31 +27,39 @@
         font-size: 20px
     }
 
+
 </style>
-<body class="p-3 mb-2 bg-black text-emphasis-info">
+<body class="p-3 mb-2 bg-black text-emphasis-info body-center">
 <div class="p-3 mb-2 bg-primary-subtle text-emphasis-secondary center" >
     <div class='flex-container'>
         <div>
             <h2>Login</h2>
+            <br>
+            <br>
             <form action="login.php" method="POST">
             <label for="username">Username:</label>
             <input type="text" name="username" required><br><br>
-        
+            <br>
             <label for="password">Password:</label>
             <input type="password" name="password" required><br><br>
-        
+            <br>
+            <br>
             <input type="submit" value="Login">
+
             </form>
         </div>
         <div>
             <h2>Register</h2>
+            <br>
+            <br>
             <form action="register.php" method="POST">
             <label for="new_username">Username:</label>
             <input type="text" name="new_username" required><br><br>
-            
+            <br>
             <label for="new_password">Password:</label>
             <input type="password" name="new_password" required><br><br>
-            
+            <br>
+            <br>
             <input type="submit" value="Register">
             </form>
         </div>
