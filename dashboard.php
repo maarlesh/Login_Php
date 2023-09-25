@@ -18,18 +18,21 @@ $username = $_SESSION['username'];
     <nav class="navbar navbar-expand-lg bg-primary-subtle">
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ml-auto">
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Logged in as: <?php echo $username; ?> </a>
             </li>
             <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" >
             <a class="nav-link active" aria-current="page" href="edit.php">Edit Profile</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="logout.php">Logout</a>
+            </li>
+            <li class="nav-item text-danger">
+            <a class="nav-link" href="delete.php">Delete User</a>
             </li>
         </ul>
         </div>
