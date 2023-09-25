@@ -18,6 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($password == $user["password"]) {
             session_start();
             $_SESSION["user_id"] = $user["id"];
+            $_SESSION["username"] = $user["username"];
             header("Location: dashboard.php");
         } else {
             echo "Password does not match.";

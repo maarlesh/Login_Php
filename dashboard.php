@@ -6,6 +6,7 @@ if (!isset($_SESSION["user_id"])) {
     exit();
 }
 
+$username = $_SESSION['username'];
 // Display the user's dashboard content here
 ?>
 <head>
@@ -18,6 +19,9 @@ if (!isset($_SESSION["user_id"])) {
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Logged in as: <?php echo $username; ?> </a>
+            </li>
             <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
