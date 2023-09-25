@@ -13,6 +13,13 @@
     padding: 10px;
     border: 1px solid #008000; 
     }
+    .deleted-message {
+    color: red;
+    font-weight: bold;
+    background-color: #f0f8ff;
+    padding: 10px;
+    border: 1px solid #008000; 
+    }
     .center{
         position : absolute;
         top : 50%;
@@ -41,6 +48,9 @@
 if (isset($_GET["message"])) {
         echo '<div class="success-message">' . $_GET["message"] . '</div>';
     }
+if(isset($_GET["messageDeleted"])){
+    echo '<div class="deleted-message">' . $_GET["messageDeleted"] . '</div>';
+}
 ?>
 
 <body class="p-3 mb-2 bg-black text-emphasis-info body-center">

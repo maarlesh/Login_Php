@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt_delete-> bind_param('s',$username);
             if ($stmt_delete->execute()) {
                 echo "User deleted successfully.";
-                header("Location: index.php");
+                header("Location: index.php?messageDeleted=User+Deleted");
             } else {
                 echo "Error deleting user.";
             }
