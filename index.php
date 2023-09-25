@@ -6,6 +6,13 @@
     <title>Login and Registration</title>
 </head>
 <style>
+    .success-message {
+    color: green;
+    font-weight: bold;
+    background-color: #f0f8ff;
+    padding: 10px;
+    border: 1px solid #008000; 
+    }
     .center{
         position : absolute;
         top : 50%;
@@ -29,6 +36,13 @@
 
 
 </style>
+<!-- Successful update -->
+<?php
+if (isset($_GET["message"])) {
+        echo '<div class="success-message">' . $_GET["message"] . '</div>';
+    }
+?>
+
 <body class="p-3 mb-2 bg-black text-emphasis-info body-center">
 <div class="p-3 mb-2 bg-primary-subtle text-emphasis-secondary center" >
     <div class='flex-container'>

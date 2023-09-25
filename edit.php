@@ -10,7 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if($stmt->execute()){
         $conn->commit(); 
         echo "$stmt->error";
-        echo "User updated successfully";
+        header("Location: index.php?message=User+updated+Successfully.+Please+Login+again");
+        echo "<div class='success-message'>User updated successfully. Please Login again</div>";
     }
     else{
         echo "Please recheck the username";
@@ -25,6 +26,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Login and Registration</title>
 </head>
 <style>
+    .success-message {
+    color: green;
+    font-weight: bold;
+    background-color: #f0f8ff;
+    padding: 10px;
+    border: 1px solid #008000; 
+    }
     .center{
         position : absolute;
         top : 50%;
