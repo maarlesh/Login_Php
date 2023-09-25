@@ -51,6 +51,9 @@ if (isset($_GET["message"])) {
 if(isset($_GET["messageDeleted"])){
     echo '<div class="deleted-message">' . $_GET["messageDeleted"] . '</div>';
 }
+if(isset($_GET["messageUserCreated"])){
+    echo '<div class="success-message">' . $_GET["messageUserCreated"] . '</div>';
+}
 ?>
 
 <body class="p-3 mb-2 bg-black text-emphasis-info body-center">

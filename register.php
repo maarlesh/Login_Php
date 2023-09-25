@@ -13,8 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($stmt->execute()) {
         echo "Registration successful. <a href='index.php'>Login</a>";
-        echo $new_username;
-        echo $new_password;
+        header("Location:index.php?messageUserCreated=User+Successfully+Created.+Please+Login");
     } 
     else {
         echo "Error: " . $stmt->error;
